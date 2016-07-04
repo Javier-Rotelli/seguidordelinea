@@ -45,6 +45,6 @@ void loop()
   int leftVal = digitalRead(leftIr);
   int rightVal = digitalRead(rightIr);
   lStep = makeStep(LStepperPins, lStep, leftVal - 1);
-  rStep = makeStep(RStepperPins, rStep , rightVal - 1);
+  rStep = makeStep(RStepperPins, rStep , rightVal + 1);
   delay(1);
 }
